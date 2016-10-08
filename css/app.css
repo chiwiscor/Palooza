@@ -31,4 +31,24 @@ body{
   background: #113b61;
   border: 0;
   color: white;
+  margin-bottom: 0;
+}
+#container-menu{
+  background: #003846;
+}
+#container-menu a{
+  color: white;
+}
+#container-menu a:hover,
+#container-submenu li a:hover{
+  color: #90b7da;
+}
+#container-submenu{
+  background: #003846;
+  color: white;
+  border:  0;
+}
+#container-submenu li{
+  list-style: none;
+  padding: 4px;
 }
