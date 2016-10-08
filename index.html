@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation :V</title>
-    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation-flex.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -16,16 +16,27 @@
       * expanded (row) -> ocupa todo el ancho de la pantalla
       * end -> para que la columna empieze enseguida de la anterior
       * TAMAÑO-offset-X -> recorrer x columna
-      * TAMAÑO-collapse/uncollapse -> quita/agrega el gutter o espaciado (padding) dentro de las columnas
+      * TAMAÑO-collapse/uncollapse (nivel de fila) -> quita/agrega el gutter o espaciado (padding) dentro de las columnas
       * TAMAÑO-cemtered/uncentered -> centra/decentra :V la columna
+
+        //se utiliza para las columnas o grilla norma
       * TAMAÑO-push-X -> mueve tantas columnas a la derecha
       * TAMAÑO-pull-X -> mueve tantas columnas a la izquierda
+
+        //para las grillas flex :V
+      * shrink -> ocupa el espacio necesario, de acuerdo al contenido de la columna
+      * TAMAÑO-expand (nivel de columna) -> lo mismo que shrink, pero para medias en especifico y es mas inteligente... ocupan el espacio disponible y no lo necesario como en shrink
+      * TAMAÑO-unstack (nivel de fila) -> lo mismo que expand pero a nivel de fila :V
+      * align-right/center/left/justify/space (nivel de fila) -> alinea las columnas horizontalmente
+      * align-middle/bottom (nivel de fila) -> alinea elementos verticalmente
+      * align-self-middle/boyyom (nivel de columna)
+      * TAMAÑO-order-POSICION (nivel columna) -> cambia al orden de la columna
     -->
-    <div class="row">
-      <div class="column small-12 medium-6 medium-push-6">
-        Hola
+    <div class="row align-justify align-middle">
+      <div class="column small-6">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
-      <div class="column small-12 medium-6 medium-pull-6">
+      <div class="column small-6 align-self-bottom">
         Mundo !!!
       </div>
     </div>
