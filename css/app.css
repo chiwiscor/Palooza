@@ -3,6 +3,9 @@ body{
   background-size: cover;
   font-family: 'Bitter', serif;
 }
+.callout{
+  margin-bottom: 0;
+}
 .titular{
   font-family: 'Ruslan Display', cursive;
 }
@@ -31,8 +34,10 @@ body{
   //background: #113b61;
   background: transparent;
   text-shadow: 3px 3px 1em gray;
+  animation-name: colores;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
   border: 0;
-  color: white;
   margin-bottom: 0;
 }
 #container-menu{
@@ -60,4 +65,38 @@ body{
 #tickets-action .callout button {
   color: white;
   border-color: white;
+}
+#container-lineUp{
+  background: #2892ed;
+  padding: 10px 0;
+}
+#lineup-tabs{
+  background: transparent;
+  border: 0;
+}
+.tabs-title{
+  display:  inline-block;
+  float: none;
+}
+.tabs-title a:hover{
+  background: transparent;
+  color: white;
+}
+.tabs-content{
+  background: transparent;
+  border: 0;
+}
+.tabs-title.is-active a{
+  background: #acd4f7;
+}
+.tabs-title a{
+  color: #113b61;
+  font-size: 20px;
+}
+
+@keyframes colores {
+    0%   {color: #a9f126;}
+    25%  {color: #2690f1;}
+    50%  {color: #f19026;}
+    100% {color: #26f1d8;}
 }
