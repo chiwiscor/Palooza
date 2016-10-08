@@ -28,7 +28,9 @@ body{
   font-size: 20px;
 }
 #container-titulo .callout{
-  background: #113b61;
+  //background: #113b61;
+  background: transparent;
+  text-shadow: 3px 3px 1em gray;
   border: 0;
   color: white;
   margin-bottom: 0;
@@ -51,4 +53,11 @@ body{
 #container-submenu li{
   list-style: none;
   padding: 4px;
+}
+#tickets-action .callout{
+  background: #113b61;
+}
+#tickets-action .callout button {
+  color: white;
+  border-color: white;
 }
