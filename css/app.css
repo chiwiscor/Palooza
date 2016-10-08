@@ -1,16 +1,24 @@
 body{
-  background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url("../ima/fondo-concierto.jpg");
+  background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url("../ima/fondo-concierto.jpg") no-repeat center;
   background-size: cover;
   font-family: 'Bitter', serif;
+  background-attachment: fixed;
 }
+#container-separador{
+  background: url("../ima/ondas.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .callout{
-  margin-bottom: 0;
+  margin-bottom:0;
 }
+
 .titular{
   font-family: 'Ruslan Display', cursive;
 }
 .t1{
-  font-size: 2em;
+  font-size: 4em;
 }
 .t2{
   font-size: 1.8em;
@@ -36,12 +44,13 @@ body{
   text-shadow: 3px 3px 1em gray;
   animation-name: colores;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-duration: 8s;
   border: 0;
   margin-bottom: 0;
 }
 #container-menu{
   background: #003846;
+  padding:.8em 0;
 }
 #container-menu a{
   color: white;
@@ -60,15 +69,30 @@ body{
   padding: 4px;
 }
 #tickets-action .callout{
-  background: #113b61;
+  //background: #113b61;
+  background: transparent;
 }
 #tickets-action .callout button {
-  color: white;
-  border-color: white;
+  //color: white;
+  //border-color: white;
 }
 #container-lineUp{
-  background: #2892ed;
+  //background: #2892ed;
+  background: rgba(40, 146, 237, 0.5);
   padding: 10px 0;
+}
+#container-lineUp h3{
+  color: white;
+  position: relative;
+  margin-bottom: .5em;
+}
+#container-lineUp h3:after{
+  position:  absolute;
+  content: " ";
+  bottom: 0;
+  border-bottom: 2px solid white;
+  width: 80%;
+  left: 10%;
 }
 #lineup-tabs{
   background: transparent;
@@ -88,15 +112,47 @@ body{
 }
 .tabs-title.is-active a{
   background: #acd4f7;
+  color: black;
 }
 .tabs-title a{
-  color: #113b61;
+  //color: #113b61;
+  color: white;
   font-size: 20px;
 }
+#container-lineUp .orbit-container{
+  margin-bottom: 1em;
+}
+#container-lineUp .column:nth-child(odd) figcaption{
+  text-align: right;
+}
+.orbit-caption,.container-horarios{
+      background-color:rgba(18, 79, 132, 0.58);;
+}
+.orbit-slide{
+  position: relative;
+}
+.container-horarios{
+  position: absolute;
+  top: 10px;
+  color: white;
 
+}
+.container-horarios i{
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container-horarios span{
+  font-size: 25px;
+}
 @keyframes colores {
     0%   {color: #a9f126;}
     25%  {color: #2690f1;}
     50%  {color: #f19026;}
     100% {color: #26f1d8;}
+}
+@media (max-width:639px) {
+  #container-lineUp  figcaption{
+    text-align: center!important;
+  }
 }
