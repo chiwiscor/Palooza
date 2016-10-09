@@ -197,6 +197,13 @@ body{
   background: #691992;
   padding: 20px 0;
 }
+#container-error i{
+  padding:  8px;
+}
+.is-invalid-input:not(:focus) {
+    background-color: rgba(206, 92, 95, 0.58);
+    border-color: #d43f3f;
+  }
 @media (max-width:639px) {
   #container-lineUp  figcaption{
     text-align: center!important;
