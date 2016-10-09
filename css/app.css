@@ -12,6 +12,7 @@ body{
 
 .callout{
   margin-bottom:0;
+  border: 0;
 }
 
 .titular{
@@ -204,6 +205,11 @@ body{
     background-color: rgba(206, 92, 95, 0.58);
     border-color: #d43f3f;
   }
+#data-sticky{
+  margin-top: 0!important;
+  width:  100%;
+  z-index: 100;
+}
 @media (max-width:639px) {
   #container-lineUp  figcaption{
     text-align: center!important;
