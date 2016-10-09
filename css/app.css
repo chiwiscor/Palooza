@@ -40,13 +40,16 @@ body{
   color: white;
   font-size: 20px;
 }
-#container-titulo .callout{
-  //background: #113b61;
-  background: transparent;
+#container-titulo .callout .titular{
   text-shadow: 3px 3px 1em gray;
   animation-name: colores;
   animation-iteration-count: infinite;
   animation-duration: 8s;
+  animation-timing-function: ease-out;
+}
+#container-titulo .callout{
+  //background: #113b61;
+  background: transparent;
   border: 0;
   margin-bottom: 0;
 }
@@ -176,6 +179,12 @@ body{
 }
 .pricing-table .price{
   background: #e0e6f5;
+}
+#container-mapa .titular{
+  padding: 10px 0;
+}
+.mapa-info iframe{
+  width: 100%;
 }
 @media (max-width:639px) {
   #container-lineUp  figcaption{
