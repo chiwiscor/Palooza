@@ -59,25 +59,27 @@
 
     <!--Menu-->
     <div id="container-menu">
-      <ul class="menu dropdown icon-top align-spaced" data-dropdown-menu>
-        <li>
-          <a href="#"><i class="fi-ticket"></i>Tickets</a>
-        </li>
-        <li>
-          <a href="#"><i class="fi-layout"></i>Lineup</a>
-          <ul id="container-submenu" class="menu">
-            <li><a href="#">Viernes</a></li>
-            <li><a href="#">Sabado</a></li>
-            <li><a href="#">Domingo</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><i class="fi-info"></i>Informacion</a>
-        </li>
-        <li>
-          <a href="#"><i class="fi-mail"></i>Suscribete</a>
-        </li>
-      </ul>
+      <nav data-magellan>
+        <ul class="menu dropdown icon-top align-spaced" data-dropdown-menu>
+          <li>
+            <a href="#container-tickets"><i class="fi-ticket"></i>Tickets</a>
+          </li>
+          <li>
+            <a href="#container-lineUp"><i class="fi-layout"></i>Lineup</a>
+            <ul id="container-submenu" class="menu">
+              <li><a href="#">Viernes</a></li>
+              <li><a href="#">Sabado</a></li>
+              <li><a href="#">Domingo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#container-mapa"><i class="fi-info"></i>Informacion</a>
+          </li>
+          <li>
+            <a href="#container-suscribete"><i class="fi-mail"></i>Suscribete</a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <!--/Menu-->
     <!--Container separador-->
@@ -293,7 +295,7 @@
     <!--/lineUp Container-->
 
     <!--Container tickets-->
-    <div id="container-tickets">
+    <div id="container-tickets" data-magellan-target="container-tickets">
       <h3 class="text-center titular raya">Paquetes</h3>
       <div class="row" data-equalizer data-equalizer-on="small">
         <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
@@ -334,7 +336,7 @@
     <!--/Container tickets-->
 
     <!--Suscribete-->
-    <div id="container-suscribete">
+    <div id="container-suscribete" data-magellan-target="container-suscribete">
       <h3 class="text-center titular raya">Suscribete</h3>
       <h4 class="text-center"><small>Y recibe las ultimas novedades</small</h4>
       <form action="" method="" novalidate data-abide>
@@ -357,7 +359,7 @@
     <!--/Suscribete-->
 
     <!--Informacion-->
-    <div id="container-mapa" class="row text-center">
+    <div id="container-mapa" class="row text-center" data-magellan-target="container-mapa">
       <h3 class="titular small-12" >Informacion</h3>
       <div class="mapa-info small-12 medium-10 medium-offset-1"
         data-interchange="
