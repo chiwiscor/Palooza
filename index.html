@@ -7,6 +7,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadata OG-->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Conciertos Palooza">
+    <meta property="og:description" content="Conoce los artistas que estaran en nuestro gran evento de Palooza">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Conciertos Palooza">
+    <meta property="og:image" content="es_ES">
+    <!--/Metadata OG-->
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="sumary_large_image">
+    <meta name="twitter:site" content="@lawliet8910">
+    <meta name="twitter:creator" content="@lawliet8910">
+    <meta name="twitter:title" content="Conciertos Palooza">
+    <meta name="twitter:description" content="Conoce los artistas que estaran en nuestro gran evento de Palooza">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:image" content=""> 
+    <!--/Meta Twitter-->
     <title>Foundation :V</title>
     <link rel="stylesheet" href="icons/foundation-icons.css">
     <link rel="stylesheet" href="css/foundation-flex.css">
@@ -42,13 +60,13 @@
 
         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
           <nav data-magellan>
-            <ul class="vertical menu">
+            <ul class="vertical menu" data-drilldown>
               <li>
                 <a href="#container-tickets"><i class="fi-ticket"></i>Tickets</a>
               </li>
               <li>
                 <a href="#container-lineUp"><i class="fi-layout"></i>Lineup</a>
-                <ul id="container-submenu" class="menu">
+                <ul class="vertical menu"   id="vertical">
                   <li><a href="#container-lineUp" data-toggle-dia="panelViernes" >Viernes</a></li>
                   <li><a href="#container-lineUp" data-toggle-dia="panelSabado" >Sabado</a></li>
                   <li><a href="#container-lineUp" data-toggle-dia="panelDomingo">Domingo</a></li>
@@ -375,7 +393,7 @@
           <div id="container-suscribete" data-magellan-target="container-suscribete">
             <h3 class="text-center titular raya">Suscribete</h3>
             <h4 class="text-center"><small>Y recibe las ultimas novedades</small</h4>
-            <form action="" method="" novalidate data-abide>
+            <form action="https://formspree.io/shinigami.ryuk.8910@gmail.com" method="POST" novalidate data-abide>
               <div data-abide-error id="container-error" class="row columns small-12 medium-6" style="display:none">
                 <p><i class="fi-alert"></i>Ingreso un correo invalido :(</p>
               </div>
