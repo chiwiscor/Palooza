@@ -88,10 +88,12 @@ body{
 }
 #container-lineUp h3{
   color: white;
-  position: relative;
   margin-bottom: .5em;
 }
-#container-lineUp h3:after{
+.raya{
+  position: relative;
+}
+.raya:after{
   position:  absolute;
   content: " ";
   bottom: 0;
@@ -185,6 +187,15 @@ body{
 }
 .mapa-info iframe{
   width: 100%;
+}
+#container-suscribete .titular{
+  padding-bottom:  0;
+  margin-bottom: 5px;
+
+}
+#container-suscribete{
+  background: #691992;
+  padding: 20px 0;
 }
 @media (max-width:639px) {
   #container-lineUp  figcaption{
