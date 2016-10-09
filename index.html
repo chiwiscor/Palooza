@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/tabla.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
+  <body class="fondo-imagen">
     <!--
       * expanded (row) -> ocupa todo el ancho de la pantalla
       * end -> para que la columna empieze enseguida de la anterior
@@ -35,340 +35,381 @@
       * align-self-middle/boyyom (nivel de columna)
       * TAMAÑO-order-POSICION (nivel columna) -> cambia al orden de la columna
     -->
-    <!--Redes sociales-->
-    <section id="container-social">
-      <div class="row align-center text-center">
-        <div class="small-1 column">
-          <a href="" target="_blank">
-            <i class="fi-web"></i>
-          </a>
-        </div>
-        <div class="small-1 column">
-          <a href="" target="_blank">
-            <i class="fi-social-twitter"></i>
-          </a>
-        </div>
-        <div class="small-1 column">
-          <a href="" target="_blank">
-            <i class="fi-social-github"></i>
-          </a>
-        </div>
-      </div>
-    </section
-    <!--/Redes sociales-->
 
-    <!--Menu-->
-    <div data-sticky-container id="scrollSticky">
-      <div class="data-sticky" id="data-sticky" data-sticky data-options="margin-top:0" data-sticky-on="small" data-top-anchor="scrollSticky">
-        <nav data-magellan  id="container-menu">
-          <ul class="menu dropdown icon-top align-spaced" data-dropdown-menu>
-            <li>
-              <a href="#container-tickets"><i class="fi-ticket"></i>Tickets</a>
-            </li>
-            <li>
-              <a href="#container-lineUp"><i class="fi-layout"></i>Lineup</a>
-              <ul id="container-submenu" class="menu">
-                <li><a href="#container-lineUp" data-toggle-dia="panelViernes" >Viernes</a></li>
-                <li><a href="#container-lineUp" data-toggle-dia="panelSabado" >Sabado</a></li>
-                <li><a href="#container-lineUp" data-toggle-dia="panelDomingo">Domingo</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#container-mapa"><i class="fi-info"></i>Informacion</a>
-            </li>
-            <li>
-              <a href="#container-suscribete"><i class="fi-mail"></i>Suscribete</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <!--/Menu-->
-    <!--Container separador-->
-    <div id="container-separador">
-      <!--Titulo y/o Logo-->
-      <div id="container-titulo">
-        <div class="callout text-center">
-          <h1 class="titular">Conciertos </br>PlatziPalooza</h1>
-        </div>
-      </div>
-      <!--/Titulo y/o Logo-->
+    <!--offCanvas-->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper id="contenedorCanvas">
 
-      <!--Tickets action-->
-      <div id="tickets-action">
-        <div class="callout large text-center">
-          <a href="#">
-            <!--<button class="large sucess hollow button">Comprar Boletos</button>-->
-            <button class="large sucess button">Comprar Boletos</button>
-          </a>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+          <nav data-magellan>
+            <ul class="vertical menu">
+              <li>
+                <a href="#container-tickets"><i class="fi-ticket"></i>Tickets</a>
+              </li>
+              <li>
+                <a href="#container-lineUp"><i class="fi-layout"></i>Lineup</a>
+                <ul id="container-submenu" class="menu">
+                  <li><a href="#container-lineUp" data-toggle-dia="panelViernes" >Viernes</a></li>
+                  <li><a href="#container-lineUp" data-toggle-dia="panelSabado" >Sabado</a></li>
+                  <li><a href="#container-lineUp" data-toggle-dia="panelDomingo">Domingo</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#container-mapa"><i class="fi-info"></i>Informacion</a>
+              </li>
+              <li>
+                <a href="#container-suscribete"><i class="fi-mail"></i>Suscribete</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <!--/Tickets action-->
-    </div>
-    <!--/Container separador-->
-    <!--lineUp Container-->
-    <section id="container-lineUp">
-      <h3 class="text-center titular raya">LineUp</h3>
-      <ul class="tabs text-center" data-tabs id="lineup-tabs">
-        <li class="tabs-title is-active"><a href="#panelViernes">Viernes</a></li>
-        <li class="tabs-title"><a href="#panelSabado">Sabado</a></li>
-        <li class="tabs-title"><a href="#panelDomingo">Domingo</a></li>
-      </ul>
-      <div class="tabs-content" data-tabs-content="lineup-tabs">
-        <div class="tabs-panel is-active" id="panelViernes">
-          <div class="row">
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>12:00 a 14:00</span>
+        <!--offCanvasContent-->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!--Redes sociales-->
+          <section id="container-social">
+            <div class="row align-center text-center">
+              <div class="small-1 column">
+                <a href="" target="_blank">
+                  <i class="fi-web"></i>
+                </a>
+              </div>
+              <div class="small-1 column">
+                <a href="" target="_blank">
+                  <i class="fi-social-twitter"></i>
+                </a>
+              </div>
+              <div class="small-1 column">
+                <a href="" target="_blank">
+                  <i class="fi-social-github"></i>
+                </a>
+              </div>
+            </div>
+          </section
+          <!--/Redes sociales-->
+
+          <!--Menu-->
+          <div data-sticky-container id="scrollSticky">
+            <div class="data-sticky" id="data-sticky" data-sticky data-options="margin-top:0" data-sticky-on="small" data-top-anchor="scrollSticky">
+              <nav data-magellan  id="container-menu">
+                <ul class="menu align-spaced show-for-small-only">
+                  <li><a href="#" id="menuOff" data-toggle="offCanvas">Menu</a></li>
+                </ul>
+
+                <ul class="menu dropdown icon-top align-spaced show-for-medium" data-dropdown-menu>
+                  <li>
+                    <a href="#container-tickets"><i class="fi-ticket"></i>Tickets</a>
+                  </li>
+                  <li>
+                    <a href="#container-lineUp"><i class="fi-layout"></i>Lineup</a>
+                    <ul id="container-submenu" class="menu">
+                      <li><a href="#container-lineUp" data-toggle-dia="panelViernes" >Viernes</a></li>
+                      <li><a href="#container-lineUp" data-toggle-dia="panelSabado" >Sabado</a></li>
+                      <li><a href="#container-lineUp" data-toggle-dia="panelDomingo">Domingo</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#container-mapa"><i class="fi-info"></i>Informacion</a>
+                  </li>
+                  <li>
+                    <a href="#container-suscribete"><i class="fi-mail"></i>Suscribete</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--/Menu-->
+          <!--Container separador-->
+          <div id="container-separador">
+            <!--Titulo y/o Logo-->
+            <div id="container-titulo">
+              <div class="callout text-center">
+                <h1 class="titular">Conciertos </br>PlatziPalooza</h1>
+              </div>
+            </div>
+            <!--/Titulo y/o Logo-->
+
+            <!--Tickets action-->
+            <div id="tickets-action">
+              <div class="callout large text-center">
+                <a href="#">
+                  <!--<button class="large sucess hollow button">Comprar Boletos</button>-->
+                  <button class="large sucess button">Comprar Boletos</button>
+                </a>
+              </div>
+            </div>
+            <!--/Tickets action-->
+          </div>
+          <!--/Container separador-->
+          <!--lineUp Container-->
+          <section id="container-lineUp">
+            <h3 class="text-center titular raya">LineUp</h3>
+            <ul class="tabs text-center" data-tabs id="lineup-tabs">
+              <li class="tabs-title is-active"><a href="#panelViernes">Viernes</a></li>
+              <li class="tabs-title"><a href="#panelSabado">Sabado</a></li>
+              <li class="tabs-title"><a href="#panelDomingo">Domingo</a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="lineup-tabs">
+              <div class="tabs-panel is-active" id="panelViernes">
+                <div class="row">
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>12:00 a 14:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/panda.jpg" alt="Panda"/>
+                        <figcaption class="orbit-caption">Pxndx</figcaption>
+                      </div>
+                    </div>
                   </div>
-                  <img class="orbit-image" src="ima/bandas/panda.jpg" alt="Panda"/>
-                  <figcaption class="orbit-caption">Pxndx</figcaption>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>14:00 a 15:30</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/ed-sheeran.jpg" alt="Ed Sheeran"/>
+                        <figcaption class="orbit-caption">Ed Sheeran</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>15:30 a 18:15</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/hatsune-miku.jpg" alt="Hatsune Miku"/>
+                        <figcaption class="orbit-caption">Hatsune Miku</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>18:15 a 20:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/imagine-dragon.jpg" alt="Imagine Dragons"/>
+                        <figcaption class="orbit-caption">Imagine Dragons</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>20:00 a 22:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/jhon-newman.jpg" alt="Jhon Newman"/>
+                        <figcaption class="orbit-caption">Jhon Newman</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel" id="panelSabado">
+                <div class="row">
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>12:00 a 14:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/kesha.jpg" alt="Kesha"/>
+                        <figcaption class="orbit-caption">Kesha</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>14:00 a 15:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/lady-gaga.jpg" alt="Lady Gaga"/>
+                        <figcaption class="orbit-caption">Lady Gaga</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>15:30 a 18:30</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/M.I.A.jpg" alt="M.I.A"/>
+                        <figcaption class="orbit-caption">M.I.A</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>18:30 a 20:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/marron5.jpg" alt="Marron5"/>
+                        <figcaption class="orbit-caption">Marron5</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>20:00 a 23:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/nicki-minaj.jpg" alt="Nicki Minaj"/>
+                        <figcaption class="orbit-caption">Nicki Minaj</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel" id="panelDomingo">
+                <div class="row">
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>12:00 a 14:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/one-republic.jpg" alt="One Republic"/>
+                        <figcaption class="orbit-caption">One Republic</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>14:00 a 16:20</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/reik.jpg" alt="Reik"/>
+                        <figcaption class="orbit-caption">Reik</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>16:20 a 18:40</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/rihana.jpg" alt="Rihana"/>
+                        <figcaption class="orbit-caption">Rihana</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>18:40 a 20:30</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/shakira.jpg" alt="Shakira"/>
+                        <figcaption class="orbit-caption">Shakira</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <div class="container-horarios column">
+                          <i class="fi-clock"></i><span>20:30 a 22:00</span>
+                        </div>
+                        <img class="orbit-image" src="ima/bandas/skrillex.png" alt="Skrillex"/>
+                        <figcaption class="orbit-caption">Skrillex</figcaption>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>14:00 a 15:30</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/ed-sheeran.jpg" alt="Ed Sheeran"/>
-                  <figcaption class="orbit-caption">Ed Sheeran</figcaption>
-                </div>
+          </section>
+          <!--/lineUp Container-->
+
+          <!--Container tickets-->
+          <div id="container-tickets" data-magellan-target="container-tickets">
+            <h3 class="text-center titular raya">Paquetes</h3>
+            <div class="row" data-equalizer data-equalizer-on="small">
+              <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Platino</li>
+                  <li class="price">$120</li>
+                  <li class="description">Acceso viernes, sabado y domingo</li>
+                  <li>5 Bebidas por cada dia.</li>
+                  <li>Parqueadero incluido todos los dias</li>
+                  <li>Participa en un sorteo para acceder al Backstage</li>
+                  <li><a class="button large" href="#">Comprar Platino</a></li>
+                </ul>
               </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>15:30 a 18:15</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/hatsune-miku.jpg" alt="Hatsune Miku"/>
-                  <figcaption class="orbit-caption">Hatsune Miku</figcaption>
-                </div>
+              <div class="column small-6 medium-5 medium-offset-1">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Gold</li>
+                  <li class="price">$90</li>
+                  <li class="description">Acceso viernes, sabado y domingo</li>
+                  <li data-equalizer-watch>2 Bebidas por cada dia.</li>
+                  <li data-equalizer-watch>Parqueadero incluido todos los dias (de 12:00 a 18:00 Hrs)</li>
+                  <li>-</li>
+                  <li><a class="button large" href="#">Comprar</a></li>
+                </ul>
               </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>18:15 a 20:00</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/imagine-dragon.jpg" alt="Imagine Dragons"/>
-                  <figcaption class="orbit-caption">Imagine Dragons</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>20:00 a 22:00</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/jhon-newman.jpg" alt="Jhon Newman"/>
-                  <figcaption class="orbit-caption">Jhon Newman</figcaption>
-                </div>
+              <div class="column small-6 medium-5">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Silver</li>
+                  <li class="price">$50</li>
+                  <li class="description">Acceso viernes, sabado y domingo</li>
+                  <li data-equalizer-watch>-</li>
+                  <li data-equalizer-watch>-</li>
+                  <li>-</li>
+                  <li><a class="button large" href="#">Comprar</a></li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-        <div class="tabs-panel" id="panelSabado">
-          <div class="row">
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>12:00 a 14:00</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/kesha.jpg" alt="Kesha"/>
-                  <figcaption class="orbit-caption">Kesha</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>14:00 a 15:00</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/lady-gaga.jpg" alt="Lady Gaga"/>
-                  <figcaption class="orbit-caption">Lady Gaga</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>15:30 a 18:30</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/M.I.A.jpg" alt="M.I.A"/>
-                  <figcaption class="orbit-caption">M.I.A</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>18:30 a 20:00</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/marron5.jpg" alt="Marron5"/>
-                  <figcaption class="orbit-caption">Marron5</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>20:00 a 23:00</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/nicki-minaj.jpg" alt="Nicki Minaj"/>
-                  <figcaption class="orbit-caption">Nicki Minaj</figcaption>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panelDomingo">
-          <div class="row">
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>12:00 a 14:00</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/one-republic.jpg" alt="One Republic"/>
-                  <figcaption class="orbit-caption">One Republic</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>14:00 a 16:20</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/reik.jpg" alt="Reik"/>
-                  <figcaption class="orbit-caption">Reik</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>16:20 a 18:40</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/rihana.jpg" alt="Rihana"/>
-                  <figcaption class="orbit-caption">Rihana</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>18:40 a 20:30</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/shakira.jpg" alt="Shakira"/>
-                  <figcaption class="orbit-caption">Shakira</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <div class="container-horarios column">
-                    <i class="fi-clock"></i><span>20:30 a 22:00</span>
-                  </div>
-                  <img class="orbit-image" src="ima/bandas/skrillex.png" alt="Skrillex"/>
-                  <figcaption class="orbit-caption">Skrillex</figcaption>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/lineUp Container-->
+          <!--/Container tickets-->
 
-    <!--Container tickets-->
-    <div id="container-tickets" data-magellan-target="container-tickets">
-      <h3 class="text-center titular raya">Paquetes</h3>
-      <div class="row" data-equalizer data-equalizer-on="small">
-        <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">Platino</li>
-            <li class="price">$120</li>
-            <li class="description">Acceso viernes, sabado y domingo</li>
-            <li>5 Bebidas por cada dia.</li>
-            <li>Parqueadero incluido todos los dias</li>
-            <li>Participa en un sorteo para acceder al Backstage</li>
-            <li><a class="button large" href="#">Comprar Platino</a></li>
-          </ul>
+          <!--Suscribete-->
+          <div id="container-suscribete" data-magellan-target="container-suscribete">
+            <h3 class="text-center titular raya">Suscribete</h3>
+            <h4 class="text-center"><small>Y recibe las ultimas novedades</small</h4>
+            <form action="" method="" novalidate data-abide>
+              <div data-abide-error id="container-error" class="row columns small-12 medium-6" style="display:none">
+                <p><i class="fi-alert"></i>Ingreso un correo invalido :(</p>
+              </div>
+              <div class="row columns small-12 medium-6">
+                <div class="input-group">
+                  <span class="input-group-label">
+                    <i class="fi-mail"></i>
+                  </span>
+                  <input required type="email" name="email" class="input-group-field" placeholder="tu@correo.com"/>
+                  <div class="input-group-button">
+                    <input type="submit" value="Suscribirse!" class="button"/>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--/Suscribete-->
+
+          <!--Informacion-->
+          <div id="container-mapa" class="row text-center" data-magellan-target="container-mapa">
+            <h3 class="titular small-12" >Informacion</h3>
+            <div class="mapa-info small-12 medium-10 medium-offset-1"
+              data-interchange="
+                [assets/mapa.html, small],
+                [assets/frame.html, medium]"></div>
+          </div>
+          <!--/Informacion-->
         </div>
-        <div class="column small-6 medium-5 medium-offset-1">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">Gold</li>
-            <li class="price">$90</li>
-            <li class="description">Acceso viernes, sabado y domingo</li>
-            <li data-equalizer-watch>2 Bebidas por cada dia.</li>
-            <li data-equalizer-watch>Parqueadero incluido todos los dias (de 12:00 a 18:00 Hrs)</li>
-            <li>-</li>
-            <li><a class="button large" href="#">Comprar</a></li>
-          </ul>
-        </div>
-        <div class="column small-6 medium-5">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">Silver</li>
-            <li class="price">$50</li>
-            <li class="description">Acceso viernes, sabado y domingo</li>
-            <li data-equalizer-watch>-</li>
-            <li data-equalizer-watch>-</li>
-            <li>-</li>
-            <li><a class="button large" href="#">Comprar</a></li>
-          </ul>
-        </div>
+        <!--/offCanvasContent-->
+
       </div>
     </div>
-    <!--/Container tickets-->
+    <!--/offCanvas-->
 
-    <!--Suscribete-->
-    <div id="container-suscribete" data-magellan-target="container-suscribete">
-      <h3 class="text-center titular raya">Suscribete</h3>
-      <h4 class="text-center"><small>Y recibe las ultimas novedades</small</h4>
-      <form action="" method="" novalidate data-abide>
-        <div data-abide-error id="container-error" class="row columns small-12 medium-6" style="display:none">
-          <p><i class="fi-alert"></i>Ingreso un correo invalido :(</p>
-        </div>
-        <div class="row columns small-12 medium-6">
-          <div class="input-group">
-            <span class="input-group-label">
-              <i class="fi-mail"></i>
-            </span>
-            <input required type="email" name="email" class="input-group-field" placeholder="tu@correo.com"/>
-            <div class="input-group-button">
-              <input type="submit" value="Suscribirse!" class="button"/>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <!--/Suscribete-->
-
-    <!--Informacion-->
-    <div id="container-mapa" class="row text-center" data-magellan-target="container-mapa">
-      <h3 class="titular small-12" >Informacion</h3>
-      <div class="mapa-info small-12 medium-10 medium-offset-1"
-        data-interchange="
-          [assets/mapa.html, small],
-          [assets/frame.html, medium]"></div>
-    </div>
-    <!--/Informacion-->
 
 
 

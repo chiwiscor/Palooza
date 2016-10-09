@@ -1,8 +1,16 @@
 body{
+  font-family: 'Bitter', serif;
+}
+.fondo-imagen{
   background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url("../ima/fondo-concierto.jpg") no-repeat center;
   background-size: cover;
-  font-family: 'Bitter', serif;
   background-attachment: fixed;
+}
+.fondo-solido{
+  background: #2c375f;
+}
+.off-canvas-content{
+  background: transparent!important;
 }
 #container-separador{
   background: url("../ima/ondas.jpg") no-repeat center;
@@ -209,6 +217,10 @@ body{
   margin-top: 0!important;
   width:  100%;
   z-index: 100;
+}
+.off-canvas-wrapper-inner #offCanvas{
+  background: #2c375f;
+  height: 100vh;
 }
 @media (max-width:639px) {
   #container-lineUp  figcaption{
