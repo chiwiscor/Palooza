@@ -16,6 +16,8 @@ body{
 
 .titular{
   font-family: 'Ruslan Display', cursive;
+  font-size: 4em;
+  color: white;
 }
 .t1{
   font-size: 4em;
@@ -150,6 +152,30 @@ body{
     25%  {color: #2690f1;}
     50%  {color: #f19026;}
     100% {color: #26f1d8;}
+}
+#container-tickets{
+  background: #2892ed;
+  padding:  1em 0;
+}
+.pricing-table{
+  border:  0;
+  background: white;
+  border-radius: 20px;
+}
+.pricing-table .description{
+  color: #134e22;
+  font-size: 1em;
+}
+.pricing-table li{
+  font-size: 1em;
+}
+.pricing-table .title{
+  font-size: 2em;
+  background: #2e4988;
+  border-radius: 20px 20px 0 0;
+}
+.pricing-table .price{
+  background: #e0e6f5;
 }
 @media (max-width:639px) {
   #container-lineUp  figcaption{
